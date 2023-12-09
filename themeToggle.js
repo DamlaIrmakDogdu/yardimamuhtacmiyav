@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('dark-theme');
         themeToggleBtn.classList.toggle('clicked');
 
-        if (isSwitchingToDarkTheme) {
+        if (!isSwitchingToDarkTheme) {
             clickSound.play();
         }
         const isLightTheme = document.body.classList.contains('light-theme');
