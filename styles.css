@@ -1,0 +1,105 @@
+main {
+    text-align: center;
+}
+
+.jiggly {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.jiggly img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* sosyal medya her bokum için css */
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-link img {
+    width: 80px; 
+    height: 80px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* göz yakma butonu related css */
+
+#themeToggleBtn {
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer;
+    position: absolute;
+    top: 1%;
+    left: 50%;    
+    transform: translateX(-50%);
+}
+
+#themeToggleBtn.clicked {
+    filter: invert(1); 
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #333; 
+    transition: background-color 0.3s ease; 
+}
+
+/* allah aşkına default ngger tema */
+body.dark-theme {
+    background-color: #333;
+    color: #cccccc;
+}
+
+/* allah katına çıkmış renkler */
+body.light-theme {
+    background-color: #cccccc; 
+    color: #333; 
+}
+
+/* suntext */
+
+#sunContainer {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#burnEyesText {
+    color: white; 
+    margin-top: 5px; 
+    font-size: 14px;
+}
